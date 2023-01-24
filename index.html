@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Readerland</title>
+</head>
+<body>
+<!--menu de navegacion-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                        <img src="./img/logomariposa.jpg" class="img-logo" alt="Logo">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                        </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav grid gap-5">
+                                <a class="nav-link active fs-4" aria-current="page" href="./index.html">Inicio</a>
+                                <a class="nav-link fs-4" href="./pages/autores.html">Autores</a>
+                                <a class="nav-link fs-4" href="./pages/curiosidades.html">Curiosidades</a>
+                        </div>
+                </div>
+                </div>
+        </nav>
+
+<!--titulo principal-->
+<section class="hero d-flex justify-content-center">
+        <h1 class="text-white readerland">
+        Readerland
+        </h1>
+
+</section>
+
+<!--primera seccion-->
+        <section class="bg-p p-5 d-flex">
+                <img src="./img/reading.jpg" class= "img-thumbnail" alt="firstsectionbook">
+                <h2 class="text-white d-flex frase"> "Un viaje de mil millas comienza con el primer paso"
+                </h2>
+        </section>
+
+<!--carrousel-->
+        <section>
+        <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                        <div class="carousel-item active">
+                                <img src="./img/Isabel-Allende1.jpg" class="d-block w-100" alt="Isabel-Allende1">
+                                <div class="carousel-caption d-none d-md-block bg-authors" >
+                                        <p class= "fs-1">Isabel Allende</p>
+                                        <p class="fs-4">"No es la fuerza de la gravedad la que mantiene el universo en equilibrio, sino la fuerza adhesiva del amor"</p>
+                                </div>
+                        </div>
+                        <div class="carousel-item">
+                                <img src="./img/Borges1.jpg" class="d-block w-100" alt="Borges1">
+                                <div class="carousel-caption d-none d-md-block bg-authors">
+                                        <p class="fs-1">Jorge Luis Borges</p>
+                                        <p class="fs-4">"Siempre imaginé el paraíso como una especie de biblioteca"</p>
+                                </div>
+                        </div>
+                        <div class="carousel-item">
+                                        <img src="./img/JulioCortazar1.jpg" class="d-block w-100" alt="JulioCortazar1">
+                                        <div class="carousel-caption d-none d-md-block bg-authors">
+                                                <p class="fs-1">Julio Cortázar</p>
+                                                <p class="fs-4">"Nada está perdido si se tiene por fin el valor de proclamar que todo está perdido y que hay que empezar de nuevo"</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden" >Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden" >Siguiente</span>
+                        </button>
+        </div>
+        </section>
+
+<!--tarjetitas-->
+        <section class="tarjetitas">
+                <div class="tarjetita">
+                        <img class= "tarjetita_imagen" src="./img/maryshelleyfrankenstein.jpg" alt="maryshelley">
+                        <div class="tarjetita_info">
+                                <h2 class="tarjetita_titulo">La autora detrás de Frankenstein</h2>
+                                <p class="tarjetita_texto fs-4">En un frío verano suizo, Lord Byron propuso a sus amigos un concurso literario del que salió una de las más turbadoras novelas de la literatura europea: Frankenstein, de Mary Shelley.</p>
+                                <button class="tarjetita_boton">Leer...</button>
+                        </div>
+                </div>
+                <div class="tarjetita">
+                        <img class= "tarjetita_imagen" src="./img/joandteddy.jpg">
+                        <div class="tarjetita_info">
+                                <h2 class="tarjetita_titulo">Una historia que se reinventa</h2>
+                                <p class="tarjetita_texto fs-4">La nueva película de "Mujercitas", que causa furor en las redes, es considerada una adaptación exquisita de la novela original.</p>
+                                <button class="tarjetita_boton">Leer...</button>
+                        </div>
+                </div>
+                
+                <div class="tarjetita">
+                        <img class= "tarjetita_imagen charles" src="./img/charlesdickens.jpg" alt="charlesdickens">
+                        <div class="tarjetita_info">
+                                <h2 class="tarjetita_titulo">La increíble vida de Charles Dickens</h2>
+                                <p class="tarjetita_texto fs-4">Trabajó en una fábrica de niño, conoció la cárcel y la sordidez de Londres. Pero quería triunfar. Y lo hizo: 
+                                        fue creador de una nueva literatura. </p>
+                                <button class="tarjetita_boton">Leer...</button>
+                        </div>
+                </div>
+        </section>
+
+<!-- books background -->
+        <section class="hero d-flex justify-content-center">
+        </section>
+
+<!--footer-->
+        <section>
+                <footer class="footer">
+                        <p>All rights reserved &copy;2023</p>
+                        <p>by Valentina Quimey</p>
+                </footer>
+        </section>
+
+<!--script de bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!--script de font awesome-->
+<script src="https://kit.fontawesome.com/081b8d656e.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
