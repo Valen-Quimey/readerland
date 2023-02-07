@@ -1,0 +1,59 @@
+/*LITTLE WOMEN*/
+.noticias-title{
+    text-align:start;
+    padding: 20px;
+    background-color:#84D2C5 ;
+
+    & p {
+        background-color: #c27564a5;
+        display: flex;
+        margin-right: 20px;
+    }
+}
+
+.noticias-imagen1{ 
+    background-image: linear-gradient(to bottom, #84D2C5, #DFD3C3);
+    background-color: #DFD3C3;
+
+    & img{ 
+        margin-left: 150px;
+        min-height:100vh;
+        min-width: 100vh;
+        justify-content:center;
+    }
+
+}
+
+.noticias-seccion1{ 
+    background-color:hsl(34, 30%, 82%);
+
+    & p {
+        text-align: justify;
+        padding: 20vh;
+        margin: 0;
+        font-family: $font-family2;
+        font-size: $font-size2;
+    }
+}
+
+.mujercitas-pinterest { 
+    background-image: linear-gradient(to top, #B05A7A, #dfd3c3);
+    background-color: #dfd3c3;
+
+    & h2{ 
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    & iframe {
+        row-gap: 100px;
+    }
+
+    .mujercitas-iframe {
+        margin: 8vh;
+    }
+}
+
+
+

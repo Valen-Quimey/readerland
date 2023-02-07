@@ -1,389 +1,391 @@
-@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
-
-*{ 
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 * {
-    font-family:'Square Peg', cursive;
-}
-/*MENU*/
-.hero {
-    background-image: url(../img/libros.jpg);
-    height: 120px;
-    padding: 2.5%;
-}
-
-.img-logo{ 
-    width: 4%;
-    height: 4%;
-    margin-top:1px;
-    margin-right: 5%;
-    margin-bottom: 1px;
-    margin-left: 1px;
-}
-
-
-/*Primera seccion*/
-
-.bg-p{ 
-    background-image: linear-gradient(to top, #a25f50, #c3ab73);
-    background-color: #C27664;
-}
-
-.img-thumbnail {
-    width: 30%;
-    height: 30%;
-    object-fit: cover;
-}
-
-.text-white{ 
-    padding: 30px;
-    
-}
-.frase{ 
-    padding: 200px;
-}
-.readerland {
-    animation-name: ancho;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 5s;
-    animation-delay: 0s;
-}
-/*Carrousel frases*/
-.carousel-item img{ 
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-}
-
-.bg-authors{ 
-    color: #4c0e0e;
-    background-color: #84d2c5d2;
-    padding: 1px;
-}
-
-/*Cards*/
-.tarjetitas {
-    display: flex;
-    padding: 60px;
-    gap: 30px;
-    background-color: #84d2c5;
-    background-image: linear-gradient(to top, #c3ab73, #6baea3);
-}
-.tarjetita {
-    background-color:#B05A7A;
-    border-radius: 5px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 20px ;
-    flex: 1;
-    margin: 3%;
-}
-.tarjetita:hover{ 
-    box-shadow: 5px 5px 5px 5px rgb(131, 129, 129);
-    background-color: #b05a79a7;
-}
-.tarjetita_imagen{ 
-    max-width: 100%;
-    max-height: 50%;
-}
-
-
-.tarjetita_info {
-    padding-inline: 20px;
-    padding: 0 20px 20px 20px;
-}
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Square Peg', cursive; }
+  *::selection {
+    background-color: #a25f50;
+    color: #fff; }
 
 /* Página Autores */
-
 .container-autores {
-    background-color: #191919;
-    height: 100vh;
-    display: grid;
-    grid-template-columns:2fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr ;
-    /* grid-template-areas:  */
-    /* "logo virginiawoolf oscarwilde"
-    "logo gabrielgarciamarquez agathachristie" */
-}
-
-.logo{ 
+  background-color: #191919;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+  .container-autores .logo {
     background-image: url(../img/writing-aesthetic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: aliceblue;
     text-align: center;
     transition-property: all;
-    /* grid-area: logo; */
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-}
-.logo:hover {
-    opacity: 0.5;
-}
-.tit-autores {
-    padding: 40%;
-    transition: .5 linear;
-}
-.tit-autores:hover{
-    margin-right: 5px;
-}
-
-.logo img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    transition-property: all;
-}
-.virginiawoolf img {
-    width: 100%;
-    height: 55vh;
-    object-fit: cover;
-}
-.oscarwilde img {
-    width: 100%;
-    height: 55vh;
-    object-fit: cover;
-}
-.gabrielgarciamarquez img {
-    width: 100%;
-    height: 45vh;
-    object-fit: cover;
-    
-}
-.agathachristie img{ 
-    width: 100%;
-    height: 45vh;
-    object-fit: cover;
-}
-.virginiawoolf{ 
+    cursor: pointer; }
+    .container-autores .logo .logo img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      transition-property: all; }
+    .container-autores .logo:hover {
+      opacity: 0.5;
+      transition: all 500ms ease-out; }
+    .container-autores .logo .tit-autores {
+      padding: 40%;
+      transition: .5 linear; }
+      .container-autores .logo .tit-autores:hover {
+        margin-right: 5px; }
+  .container-autores .virginiawoolf {
     background-color: #C27664;
-    /* grid-area: virginiawoolf; */
-}
-.virginiawoolf:hover{ 
-    opacity: 0.5;
-}
-
-.oscarwilde{ 
-    background-color:#B05A7A;
-    /* grid-area: oscarwilde; */
-}
-.oscarwilde:hover {
-    opacity: 0.5;
-}
-.gabrielgarciamarquez {
-    background-color:#E4C988;
-    /* grid-area: gabrielgarciamarquez; */
-}
-.gabrielgarciamarquez:hover {
-    opacity: 0.5;
-}
-.agathachristie {
+    transition: all 500ms ease-out; }
+    .container-autores .virginiawoolf img {
+      width: 100%;
+      height: 55vh;
+      object-fit: cover; }
+    .container-autores .virginiawoolf:hover {
+      opacity: 0.5;
+      cursor: pointer; }
+  .container-autores .oscarwilde {
+    background-color: #B05A7A;
+    transition: all 500ms ease-out; }
+    .container-autores .oscarwilde img {
+      width: 100%;
+      height: 55vh;
+      object-fit: cover; }
+    .container-autores .oscarwilde:hover {
+      opacity: 0.5;
+      cursor: pointer; }
+  .container-autores .gabrielgarciamarquez {
+    background-color: #E4C988;
+    transition: all 500ms ease-out; }
+    .container-autores .gabrielgarciamarquez img {
+      width: 100%;
+      height: 45vh;
+      object-fit: cover; }
+    .container-autores .gabrielgarciamarquez:hover {
+      opacity: 0.5;
+      cursor: pointer; }
+  .container-autores .agathachristie {
     background-color: #84D2C5;
-    /* grid-area: agathachristie; */
-}
-.agathachristie:hover{ 
-    opacity: 0.5;
-}
-.container >div{ 
-    display: grid;
-    place-items: center;
-}
-
-.autores2 {
-    background-color: #84d2c5;
-}
+    transition: all 500ms ease-out; }
+    .container-autores .agathachristie img {
+      width: 100%;
+      height: 45vh;
+      object-fit: cover; }
+    .container-autores .agathachristie:hover {
+      opacity: 0.5;
+      cursor: pointer; }
 
 /*Lista de autores*/
-.tit-lista{ 
-    background-color: #B05A7A;
-    height: 10vh;
-    text-align: center;
-    padding: 0.5%;
-    color: #f6f6f6f0;
-}
-.table{ 
-    background-color: #84D2C5;
-    margin: 0;
-}
+.tit-lista {
+  background-color: #B05A7A;
+  height: 10vh;
+  text-align: center;
+  padding: 0.5%;
+  color: #f6f6f6f0; }
 
+/*Tabla*/
+.table {
+  background-color: #84D2C5;
+  margin: 0; }
 
 /*CURIOSIDADES*/
-.bg-curiosidades{ 
-    background-color: #a25f50;
-    padding: 1px;
-    color: #4c0e0e;
-}
-.bg-curiosidades:hover {
-    box-shadow: 5px 5px 5px 5px rgb(114, 113, 113);
-}
+.bg-curiosidades {
+  background-color: #a25f50;
+  padding: 1px;
+  color: #4c0e0e; }
+  .bg-curiosidades:hover {
+    box-shadow: 5px 5px 5px 5px rgba(114, 113, 113, 0.669);
+    cursor: pointer; }
+  .bg-curiosidades .curiosidades-tit {
+    font-family: "Josefin Sans", sans-serif; }
 
 /*Video y playlist*/
-.bg-cortazar{ 
-    background-color: #c3ab73;
-}
-
-.cortazar h2{ 
+.bg-cortazar {
+  background-color: #c3ab73; }
+  .bg-cortazar .cortazar h1 {
     text-align: center;
     background-color: #a25f50bd;
+    background-image: linear-gradient(to bottom, #a25f50bd, #c3ab73);
     padding: 2px;
-    margin-bottom: 20px;
-}
-.cortazar iframe{ 
-    margin-left: 350px;
-}
-.cortazar2 h3 {
+    margin-bottom: 20px; }
+  .bg-cortazar .cortazar iframe {
+    margin-left: 20px; }
+  .bg-cortazar .cortazar2 h2 {
     text-align: center;
     background-color: #84d2c5bd;
+    background-image: linear-gradient(to bottom, #84d2c5bd, #c3ab73);
     padding: 5px;
-    margin-top: 20px;
-}
-.cortazar2 iframe {
-    margin-left: 370px;
-}
-/*FOOTER*/
-.footer {
-    background-color: #E4C988;
-    color: white;
+    margin-top: 20px; }
+  .bg-cortazar .cortazar2 iframe {
+    margin-left: 20px; }
+
+/*Dickens*/
+.dickens-pinterest {
+  background-image: linear-gradient(to top, #C27664, #dfd3c3);
+  background-color: #dfd3c3; }
+  .dickens-pinterest h2 {
     text-align: center;
-    display:flex;
-    justify-content:space-around;
-    padding: 5px;
-}
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  .dickens-pinterest iframe {
+    row-gap: 2.5vh; }
+  .dickens-pinterest .dickens-iframe {
+    margin-top: 5vh;
+    margin-right: 12vh;
+    margin-bottom: 5vh;
+    margin-left: 12vh; }
 
-/*ANIMACION EN EL TITULO*/
-@keyframes ancho{ 
-    0% {
-        width: 150px;
-        height: 89px;
-        background-color: #92bbb3;
-    }
-    50% {
-        width: 200px;
-        height: 89px;
-        background-color: #a17e97;
-    }
-    100% {
-        width: 250px;
-        height: 89px;
-        background-color: #868266;
-    }
-}
+/*MENU*/
+.hero {
+  background-image: url(../img/libros.jpg);
+  height: 120px;
+  padding: 2.5%; }
 
-/*MEDIA QUERIES autores*/
-@media screen and (max-width:768px){
-    .container-autores {
-        height: 250vh;
-        grid-template-columns: 1fr ;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "logo"
-    "virginia woolf"
-    "oscar wilde"
-    "gabrielgarciamarquez"
-    "agathachristie"
-    }
-}
-@media screen and (max-width:480px) {
-    .container-autores{ 
-        height: 250vh;
-        grid-template-columns: 1fr ;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "logo"
-    "virginia woolf"
-    "oscar wilde"
-    "gabrielgarciamarquez"
-    "agathachristie"
-    }
+.img-logo {
+  width: 4%;
+  height: 4%;
+  margin-top: 1px;
+  margin-right: 5%;
+  margin-bottom: 1px;
+  margin-left: 1px; }
 
-
-}
-/*MEDIA QUERIES inicio*/
-@media screen and (max-width:768px){
-
-    .readerland {
-        display: flex;
-        flex-direction: column;
-        min-width: 15vh;
-        min-height: 15vh;
-    }
+/*Primera seccion*/
+.readerland {
+  display: block;
+  color: #fff;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 22ch;
+  animation: typing 3s steps(22), blink 0.5s infinite step-end alternate;
+  overflow: hidden; }
 
 .bg-p {
+  background-image: linear-gradient(to top, #a25f50, #c3ab73);
+  background-color: #C27664; }
+  .bg-p .img-thumbnail {
+    width: 30%;
+    height: 30%;
+    object-fit: cover; }
+  .bg-p .text-white {
+    padding: 30px; }
+
+/*Carrousel frases*/
+.carousel-item img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover; }
+
+.bg-authors {
+  color: #4c0e0e;
+  background-color: #84d2c5d2;
+  padding: 1px; }
+
+/*Cards*/
+.tarjetitas {
+  display: flex;
+  padding: 60px;
+  gap: 30px;
+  background-color: #84d2c5;
+  background-image: linear-gradient(to top, #c3ab73, #6baea3); }
+  .tarjetitas .tarjetita {
+    background-color: #B05A7A;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    margin: 3%; }
+    .tarjetitas .tarjetita:hover {
+      box-shadow: 5px 5px 5px 5px rgba(114, 113, 113, 0.669);
+      background-color: #b05a79a7; }
+    .tarjetitas .tarjetita .tarjetita_imagen {
+      max-width: 100vh;
+      max-height: 70vh; }
+    .tarjetitas .tarjetita .tarjetita_info {
+      padding-inline: 20px;
+      padding: 0 20px 20px 20px; }
+      .tarjetitas .tarjetita .tarjetita_info .tarjetita_texto {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 21px; }
+      .tarjetitas .tarjetita .tarjetita_info .tarjetita_boton a {
+        background-color: #84D2C5;
+        border: none;
+        color: #191919;
+        padding: 10px 24px;
+        text-align: center;
+        display: inline-block;
+        font-size: 18px;
+        text-decoration: none; }
+
+/*LITTLE WOMEN*/
+.noticias-title {
+  text-align: start;
+  padding: 20px;
+  background-color: #84D2C5; }
+  .noticias-title p {
+    background-color: #c27564a5;
+    display: flex;
+    margin-right: 20px; }
+
+.noticias-imagen1 {
+  background-image: linear-gradient(to bottom, #84D2C5, #DFD3C3);
+  background-color: #DFD3C3; }
+  .noticias-imagen1 img {
+    margin-left: 150px;
+    min-height: 100vh;
+    min-width: 100vh;
+    justify-content: center; }
+
+.noticias-seccion1 {
+  background-color: #dfd3c3; }
+  .noticias-seccion1 p {
+    text-align: justify;
+    padding: 20vh;
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 21px; }
+
+.mujercitas-pinterest {
+  background-image: linear-gradient(to top, #B05A7A, #dfd3c3);
+  background-color: #dfd3c3; }
+  .mujercitas-pinterest h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  .mujercitas-pinterest iframe {
+    row-gap: 100px; }
+  .mujercitas-pinterest .mujercitas-iframe {
+    margin: 8vh; }
+
+/*Shelley*/
+.shelley-pinterest {
+  background-image: linear-gradient(to top, #C27664, #dfd3c3);
+  background-color: #dfd3c3; }
+  .shelley-pinterest h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  .shelley-pinterest .shelley-iframe {
+    margin-top: 5vh;
+    margin-right: 12vh;
+    margin-bottom: 5vh;
+    margin-left: 12vh; }
+
+/*FOOTER*/
+.footer {
+  background-color: #E4C988;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px; }
+
+/*Redes*/
+.fa-tiktok, .fa-twitter, .fa-pinterest {
+  color: whitesmoke; }
+  .fa-tiktok:hover, .fa-twitter:hover, .fa-pinterest:hover {
+    color: #a14ba0; }
+
+.fa-twitter:hover {
+  color: #7ba8d9; }
+
+.fa-pinterest:hover {
+  color: #c53e3e; }
+
+/*MEDIA QUERIES tablet 768px*/
+@media screen and (max-width: 768px) {
+  .container-autores {
+    height: 250vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "logo" "virginia woolf" "oscar wilde" "gabrielgarciamarquez" "agathachristie"; }
+  .bg-p {
     display: flex;
     flex: 1;
     height: 95vh;
-    flex-direction: column;
-}
-
-.text-white {
+    flex-direction: column; }
+  .text-white {
     display: flex;
     flex: 1;
     min-width: 30vh;
     min-height: 10vh;
-    padding: 5px;
-}
-.img-thumbnail{ 
+    padding: 5px; }
+  .img-thumbnail {
     display: flex;
     flex: 1;
     order: 2;
     min-width: 50vh;
-    max-height: 70vh;
-}
-html, body {
-    max-width: 100% ;
-    overflow-x: hidden ;
-}
-.tarjetitas{ 
+    max-height: 70vh; }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden; }
+  .tarjetitas {
+    display: flex;
+    flex-direction: column; }
+  .noticias-title {
     display: flex;
     flex-direction: column;
-}
-}
+    justify-content: space-between;
+    padding: 40px; }
+  .noticias-imagen1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; } }
 
-@media screen and (max-width:480px){
-    .readerland {
-        display: flex;
-        flex-direction: column;
-        min-width: fit-content;
-        min-height: fit-content;
-    }
-
-.bg-p {
+@media screen and (max-width: 480px) {
+  .container-autores {
+    height: 250vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "logo" "virginia woolf" "oscar wilde" "gabrielgarciamarquez" "agathachristie"; }
+  .bg-p {
     display: flex;
     flex-direction: column;
     flex: 1;
-    height: 100vh;
-}
-
-.frase {
+    height: 100vh; }
+  .frase {
     display: flex;
     flex-direction: row;
     min-width: 20vh;
-    max-height:30vh;
-    flex: 1;
-}
-.img-thumbnail{ 
+    max-height: 30vh;
+    flex: 1; }
+  .img-thumbnail {
     display: flex;
     flex-direction: row;
     flex: 1;
     min-width: 30vh;
-    min-height: 60vh;
-}
-html, body {
+    min-height: 60vh; }
+  html, body {
     max-width: 100%;
-    overflow-x: hidden ;
-}
-.tarjetitas{ 
+    overflow-x: hidden; }
+  .tarjetitas {
+    display: flex;
+    flex-direction: column; }
+  .noticias-title {
     display: flex;
     flex-direction: column;
-}
-}
+    justify-content: space-between; }
+  .noticias-imagen1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; } }
 
+/*ANIMACION EN EL TITULO*/
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }

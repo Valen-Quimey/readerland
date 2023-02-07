@@ -1,0 +1,50 @@
+
+/*CURIOSIDADES*/
+.bg-curiosidades{ 
+    background-color: #a25f50;
+    padding: 1px;
+    color: #4c0e0e;
+
+    &:hover {
+        box-shadow: 5px 5px 5px 5px  rgba(114, 113, 113, 0.669);
+        cursor: pointer;
+    }
+
+    .curiosidades-tit {
+        font-family: $font-family2;
+    }
+}
+
+
+/*Video y playlist*/
+.bg-cortazar{ 
+    background-color: #c3ab73;
+
+    .cortazar{ 
+        h1{ 
+            text-align: center;
+            background-color: #a25f50bd;
+            background-image: linear-gradient(to bottom,#a25f50bd, #c3ab73);
+            padding: 2px;
+            margin-bottom: 20px;
+        }
+
+        iframe{ 
+            margin-left: 20px;
+        }
+    }
+
+    .cortazar2{ 
+        h2 {
+            text-align: center;
+            background-color: #84d2c5bd;
+            background-image: linear-gradient(to bottom,#84d2c5bd, #c3ab73);
+            padding: 5px;
+            margin-top: 20px;
+        }
+
+        iframe {
+            margin-left: 20px;
+        }
+    }
+}

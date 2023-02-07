@@ -1,0 +1,5 @@
+//mixin en el index
+@mixin tamanos ($alto, $ancho){ 
+    width: $ancho;
+    height: $alto;
+}

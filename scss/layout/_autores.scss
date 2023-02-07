@@ -1,0 +1,125 @@
+/* Página Autores */
+
+.container-autores {
+    background-color: #191919;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+
+    .logo{ 
+        background-image: url(../img/writing-aesthetic.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: aliceblue;
+        text-align: center;
+        transition-property: all;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        cursor: pointer;
+    
+        .logo img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            transition-property: all;
+        }
+
+        &:hover {
+            opacity: 0.5;
+            transition:all 500ms ease-out;
+        }
+
+        .tit-autores {
+            padding: 40%;
+            transition: .5 linear;
+        
+            &:hover{
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .virginiawoolf{ 
+        background-color: #C27664;
+        transition:all 500ms ease-out;
+
+        & img {
+            width: 100%;
+            height: 55vh;
+            object-fit: cover;
+        }
+
+        &:hover{ 
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+    .oscarwilde{ 
+        background-color:#B05A7A;
+        transition:all 500ms ease-out;
+
+        & img {
+            width: 100%;
+            height: 55vh;
+            object-fit: cover;
+        }
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+    .gabrielgarciamarquez {
+        background-color:#E4C988;
+        transition:all 500ms ease-out;
+    
+        & img {
+            width: 100%;
+            height: 45vh;
+            object-fit: cover;
+        }
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+    .agathachristie {
+        background-color: #84D2C5;
+        transition:all 500ms ease-out;
+
+        & img{ 
+            width: 100%;
+            height: 45vh;
+            object-fit: cover;
+        }
+
+        &:hover{ 
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+}
+
+
+/*Lista de autores*/
+.tit-lista{ 
+    background-color: #B05A7A;
+    height: 10vh;
+    text-align: center;
+    padding: 0.5%;
+    color: #f6f6f6f0;
+}
+
+/*Tabla*/
+.table{ 
+    background-color: #84D2C5;
+    margin: 0;
+}
+

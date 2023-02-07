@@ -1,0 +1,19 @@
+/*Shelley*/
+.shelley-pinterest{ 
+    background-image: linear-gradient(to top, #C27664, #dfd3c3);
+    background-color: #dfd3c3;
+
+    & h2{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .shelley-iframe {
+        margin-top: 5vh;
+        margin-right: 12vh;
+        margin-bottom: 5vh;
+        margin-left: 12vh;
+    }
+}
+

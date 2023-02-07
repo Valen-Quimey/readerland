@@ -1,0 +1,26 @@
+/*Dickens*/
+
+.dickens-pinterest {
+    background-image: linear-gradient(to top, #C27664, #dfd3c3);
+    background-color: #dfd3c3;
+
+    & h2 {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    & iframe {
+        row-gap: 2.5vh;
+    }
+
+
+    .dickens-iframe {
+        margin-top: 5vh;
+        margin-right: 12vh;
+        margin-bottom: 5vh;
+        margin-left: 12vh;
+    }
+}
+
+

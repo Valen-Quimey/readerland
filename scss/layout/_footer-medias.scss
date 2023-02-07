@@ -1,0 +1,164 @@
+/*FOOTER*/
+.footer {
+    background-color: #E4C988;
+    color: white;
+    text-align: center;
+    display:flex;
+    justify-content:space-around;
+    padding: 5px;
+}
+
+/*Redes*/
+
+.fa-tiktok {
+    color: whitesmoke;
+
+    &:hover{ 
+        color: #a14ba0;
+    }
+}
+
+.fa-twitter{ 
+    @extend .fa-tiktok;
+    &:hover {
+        color: #7ba8d9;
+    }
+}
+
+.fa-pinterest{ 
+    @extend .fa-tiktok;
+    &:hover{ 
+        color: rgb(197, 62, 62);
+    }
+}
+
+/*MEDIA QUERIES tablet 768px*/
+@media screen and (max-width:768px){
+    //autores
+    .container-autores {
+        height: 250vh;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "logo"
+        "virginia woolf"
+        "oscar wilde"
+        "gabrielgarciamarquez"
+        "agathachristie"
+    }
+
+    //inicio
+
+    .bg-p {
+        display: flex;
+        flex: 1;
+        height: 95vh;
+        flex-direction: column;
+    }
+    
+    .text-white {
+        display: flex;
+        flex: 1;
+        min-width: 30vh;
+        min-height: 10vh;
+        padding: 5px;
+    }
+    .img-thumbnail{ 
+        display: flex;
+        flex: 1;
+        order: 2;
+        min-width: 50vh;
+        max-height: 70vh;
+    }
+    html, body {
+        max-width: 100% ;
+        overflow-x: hidden ;
+    }
+    .tarjetitas{ 
+        display: flex;
+        flex-direction: column;
+    }
+
+    //otras páginas
+    .noticias-title {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        padding: 40px;
+    }
+
+    .noticias-imagen1{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:20px;
+        
+    }
+
+
+}
+
+//mobile 480px
+
+@media screen and (max-width:480px){
+    //autores
+    .container-autores{ 
+    height: 250vh;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "logo"
+    "virginia woolf"
+    "oscar wilde"
+    "gabrielgarciamarquez"
+    "agathachristie"
+    }
+
+    //inicio
+.bg-p {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+}
+
+.frase {
+    display: flex;
+    flex-direction: row;
+    min-width: 20vh;
+    max-height:30vh;
+    flex: 1;
+}
+.img-thumbnail{ 
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    min-width: 30vh;
+    min-height: 60vh;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden ;
+}
+.tarjetitas{ 
+    display: flex;
+    flex-direction: column;
+}
+
+//otras páginas
+.noticias-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.noticias-imagen1{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    
+}
+}
+

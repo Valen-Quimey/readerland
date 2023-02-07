@@ -1,0 +1,23 @@
+//imports de los partials
+@import './base/vars';
+@import './base/reset';
+@import './base/mixin';
+
+
+
+//componentes
+@import './componentes/btn';
+@import './componentes/keyframes';
+
+//layout
+@import './layout/autores.scss';
+@import './layout/curiosidades.scss';
+@import './layout/dickens.scss';
+@import './layout/index.scss';
+@import './layout/mujercitas.scss';
+@import './layout/shelley.scss';
+@import './layout/footer-medias';
+
+
+
+
