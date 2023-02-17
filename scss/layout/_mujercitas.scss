@@ -5,9 +5,11 @@
     background-color:#84D2C5 ;
 
     & p {
-        background-color: #c27564a5;
+        background-color: #c27564a9;
         display: flex;
         margin-right: 20px;
+        font-family: $font-family2;
+       
     }
 }
 
@@ -16,9 +18,8 @@
     background-color: #DFD3C3;
 
     & img{ 
-        margin-left: 150px;
-        min-height:100vh;
-        min-width: 100vh;
+        min-height:auto;
+        min-width: 100%;
         justify-content:center;
     }
 
@@ -28,17 +29,23 @@
     background-color:hsl(34, 30%, 82%);
 
     & p {
-        text-align: justify;
-        padding: 20vh;
-        margin: 0;
+        text-align:justify;
+        
+        margin-top: 0;
+        margin-bottom: 1rem;
         font-family: $font-family2;
-        font-size: $font-size2;
+        font-size: 18px;
+    
+        .capital {
+            font-size: 60px;
+        }
     }
 }
 
 .mujercitas-pinterest { 
     background-image: linear-gradient(to top, #B05A7A, #dfd3c3);
     background-color: #dfd3c3;
+    padding-top: 15vh;
 
     & h2{ 
         text-align: center;
@@ -46,14 +53,54 @@
         padding-bottom: 20px;
     }
 
-    & iframe {
-        row-gap: 100px;
+    &-1 { 
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.noticias-title{ 
+
+    & p, em {
+        font-family: $font-family2;
+        font-size: $font-size4;
+        margin-top: 5%;
+        margin-right: 2%;
+        margin-bottom: 5%;
+        margin-left: 2%;
+        border-radius: 5px;
     }
 
-    .mujercitas-iframe {
-        margin: 8vh;
+}
+
+.noticias-imagen1{ 
+    display: flex;
+
+    & img{ 
+        max-width: 100%;
+        max-height: auto;
+        object-fit:cover;
+        padding: 2%;
+    }
+}
+
+.noticias-seccion1 p {
+    font-size: $font-size4;
+    text-align: justify;
+    margin: 0;
+    padding: 5vh;
+    line-height: 1.5em;
+
+    & em {
+        font-family: $font-family2, cursive;
     }
 }
 
 
-
+.mujercitas-iframe {
+    margin: 6%;
+    justify-content: center;
+    align-content: center;
+}

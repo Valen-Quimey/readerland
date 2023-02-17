@@ -46,55 +46,251 @@
         "gabrielgarciamarquez"
         "agathachristie"
     }
+    .tit-autores{ 
+        display: none;
+    }
+
 
     //inicio
 
     .bg-p {
         display: flex;
-        flex: 1;
-        height: 95vh;
         flex-direction: column;
     }
     
     .text-white {
         display: flex;
         flex: 1;
-        min-width: 30vh;
-        min-height: 10vh;
-        padding: 5px;
+        min-width: 100%;
+        height: auto;
+        align-items: center;
+        font-family: $font-family2;
+        margin-top: 5%;
+        margin-right: 2%;
+        margin-bottom: 5%;
+        margin-left: 2%;
     }
     .img-thumbnail{ 
         display: flex;
         flex: 1;
         order: 2;
-        min-width: 50vh;
-        max-height: 70vh;
+        min-width:100%;
+        height: auto;
+        object-fit: contain;
     }
     html, body {
         max-width: 100% ;
         overflow-x: hidden ;
     }
-    .tarjetitas{ 
+    .tarjetita{ 
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-self: auto;
+        margin: 0;
+        
     }
-
+    
+    .tarjetita_texto{ 
+        font-size: $font-size3;
+    }
+    .tajetita_imagen {
+        height: auto;
+        max-width: 100%;
+    }
+  
     //otras páginas
     .noticias-title {
         display: flex;
         flex-direction: column;
         justify-content:space-between;
         padding: 40px;
+
+        & p, em{ 
+            font-family: $font-family2;
+            font-size: $font-size4;
+            margin-top: 5%;
+            margin-right: 2%;
+            margin-bottom: 5%;
+            margin-left: 2%;
+            border-radius: 5px;
+        }
     }
 
     .noticias-imagen1{ 
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding:20px;
-        
+
+        & img{ 
+            max-width: 100%;
+            max-height: auto;
+            object-fit:cover;
+            padding: 2%;
+        }
     }
 
+    .noticias-seccion1 p {
+        font-size: $font-size4;
+        text-align: justify;
+        margin: 0;
+        padding: 5vh;
+        line-height: 1.5em;
+    }
+
+    .shelley-1 {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mujercitas-1{ 
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dickens-1 {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .newsletter-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .picture{
+        min-width: 100%;
+        height: 420px;
+    }
+
+    .newsletter {
+        min-width: 100%;
+        padding: 100px 20%;
+    }
+
+
+    .img-logo {
+        display: none;
+    }
+
+
+
+}
+
+//758px
+@media screen and (max-width:758px) {
+        //autores
+        .container-autores {
+            height: 250vh;
+            grid-template-columns: 1fr ;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas: 
+            "logo"
+            "virginia woolf"
+            "oscar wilde"
+            "gabrielgarciamarquez"
+            "agathachristie"
+        }
+        .tit-autores{ 
+            display: none;
+        }
+    
+    
+        //inicio
+    
+        .bg-p {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .text-white {
+            display: flex;
+            flex: 1;
+            min-width: 100%;
+            height: auto;
+            align-items: center;
+        }
+        .img-thumbnail{ 
+            display: flex;
+            flex: 1;
+            order: 2;
+            min-width:100%;
+            height: auto;
+            object-fit: contain;
+        }
+        html, body {
+            max-width: 100% ;
+            overflow-x: hidden ;
+        }
+        .tarjetitas{ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+        .tarjetita_info {
+            font-size: $font-size3;
+        }
+        .tajetita_imagen {
+            height: auto;
+            max-width: 100vh;
+        }
+        //otras páginas
+        .noticias-title {
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            padding: 40px;
+    
+            & p, em{ 
+                font-family: $font-family2;
+                font-size: $font-size4;
+                margin-top: 5%;
+                margin-right: 2%;
+                margin-bottom: 5%;
+                margin-left: 2%;
+                border-radius: 5px;
+            }
+        }
+    
+        .noticias-imagen1{ 
+            display: flex;
+    
+            & img{ 
+                max-width: 100%;
+                max-height: auto;
+                object-fit:cover;
+                padding: 2%;
+            }
+        }
+    
+        .noticias-seccion1 p {
+            font-size: $font-size4;
+            text-align: justify;
+            margin: 0;
+            padding: 5vh;
+            line-height: 1.5em;
+        }
+    
+        .shelley-pinterest {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mujercitas-pinterest{ 
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .dickens-pinterest {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
 }
 
@@ -119,7 +315,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    height: 100vh;
+    height: auto;
 }
 
 .frase {
@@ -130,35 +326,100 @@
     flex: 1;
 }
 .img-thumbnail{ 
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    min-width: 30vh;
-    min-height: 60vh;
+    max-width: 100%;
+    max-height: auto;
+    object-fit:contain;
+
 }
+
+.text-white {
+    font-family: $font-family2;
+    margin-top: 5%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden ;
 }
-.tarjetitas{ 
+.tarjetita{ 
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 }
-
+.tarjetita_info {
+    font-size: $font-size3;
+}
+.tajetita_imagen {
+    height: auto;
+}
 //otras páginas
 .noticias-title {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
+    & p, em{ 
+        font-family: $font-family2;
+        font-size: $font-size3;
+        margin-top: 5%;
+        margin-right: 2%;
+        margin-bottom: 5%;
+        margin-left: 2%;
+        border-radius: 5px;
+    }
 }
 
 .noticias-imagen1{ 
     display: flex;
+    
+    & img{ 
+        max-width: 100%;
+        max-height: auto;
+        object-fit:contain;
+        padding: 2%;
+    }
+}
+
+
+.noticias-seccion1 p {
+    font-size: $font-size3;
+    text-align: justify;
+    margin: 0;
+    padding: 5vh;
+    line-height: 1.5em;
+}
+
+
+.shelley-pinterest {
+    margin: 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding:20px;
-    
 }
+.mujercitas-pinterest{ 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dickens-pinterest {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter {
+    padding: 100px 30px;
+}
+.picture {
+    min-height: 50%;
+}
+
+
+
 }
 

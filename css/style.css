@@ -10,6 +10,15 @@
     background-color: #a25f50;
     color: #fff; }
 
+/*ANIMACION EN EL TITULO*/
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
+
 /* Página Autores */
 .container-autores {
   background-color: #191919;
@@ -98,9 +107,10 @@
 
 /*CURIOSIDADES*/
 .bg-curiosidades {
-  background-color: #a25f50;
+  background-color: #84D2C5;
   padding: 1px;
-  color: #4c0e0e; }
+  color: #100f0f;
+  border-radius: 5px; }
   .bg-curiosidades:hover {
     box-shadow: 5px 5px 5px 5px rgba(114, 113, 113, 0.669);
     cursor: pointer; }
@@ -109,39 +119,105 @@
 
 /*Video y playlist*/
 .bg-cortazar {
-  background-color: #c3ab73; }
+  background-color: #c3ab73;
+  background-image: linear-gradient(to top, #B05A7A, #C27664); }
   .bg-cortazar .cortazar h1 {
     text-align: center;
     background-color: #a25f50bd;
-    background-image: linear-gradient(to bottom, #a25f50bd, #c3ab73);
+    background-image: linear-gradient(to bottom, #84D2C5, #C27664);
     padding: 2px;
     margin-bottom: 20px; }
-  .bg-cortazar .cortazar iframe {
-    margin-left: 20px; }
+  .bg-cortazar .cortazar .yt iframe {
+    padding: 2%; }
   .bg-cortazar .cortazar2 h2 {
     text-align: center;
     background-color: #84d2c5bd;
-    background-image: linear-gradient(to bottom, #84d2c5bd, #c3ab73);
+    background-image: linear-gradient(to bottom, #84d2c5bd, #B05A7A);
     padding: 5px;
     margin-top: 20px; }
   .bg-cortazar .cortazar2 iframe {
-    margin-left: 20px; }
+    padding: 2%; }
+
+.news {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #B05A7A; }
+  .news .newsletter-container {
+    background-color: #c3ab73;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .news .newsletter-container .picture {
+      width: 50%;
+      background: url(../../img/rory2.jpg) no-repeat center;
+      background-size: cover; }
+    .news .newsletter-container .newsletter {
+      width: 50%;
+      padding: 80px 8%; }
+      .news .newsletter-container .newsletter h3 {
+        margin-bottom: 20px;
+        color: #1a1717;
+        font-weight: 900; }
+      .news .newsletter-container .newsletter p {
+        margin-bottom: 40px;
+        font-size: 16px;
+        font-family: "Josefin Sans", sans-serif;
+        color: #3f3939; }
+      .news .newsletter-container .newsletter form {
+        height: 68px;
+        background-color: #3f3939;
+        border-radius: 3px;
+        display: flex;
+        padding: 8px 0;
+        font-family: "Josefin Sans", sans-serif; }
+        .news .newsletter-container .newsletter form .email-input {
+          width: calc(100% - 120px);
+          padding: 20px;
+          color: aliceblue;
+          background: none;
+          border: none;
+          font-size: 16px;
+          outline: none;
+          transition: .2s linear; }
+          .news .newsletter-container .newsletter form .email-input::placeholder {
+            color: aliceblue; }
+          .news .newsletter-container .newsletter form .email-input:focus {
+            padding-left: 30px; }
+        .news .newsletter-container .newsletter form .btn {
+          width: 120px;
+          text-transform: uppercase;
+          color: #9fa3a7;
+          cursor: pointer;
+          border-left: 1px solid #777;
+          background: none;
+          border: none;
+          font-size: 16px;
+          outline: none;
+          transition: .2s linear; }
+          .news .newsletter-container .newsletter form .btn:hover {
+            color: aliceblue; }
 
 /*Dickens*/
 .dickens-pinterest {
   background-image: linear-gradient(to top, #C27664, #dfd3c3);
-  background-color: #dfd3c3; }
+  background-color: #dfd3c3;
+  padding-top: 15vh; }
   .dickens-pinterest h2 {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px; }
-  .dickens-pinterest iframe {
-    row-gap: 2.5vh; }
-  .dickens-pinterest .dickens-iframe {
-    margin-top: 5vh;
-    margin-right: 12vh;
-    margin-bottom: 5vh;
-    margin-left: 12vh; }
+  .dickens-pinterest-1 {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+.dickens-iframe {
+  margin: 6%;
+  justify-content: center;
+  align-content: center; }
 
 /*MENU*/
 .hero {
@@ -150,10 +226,10 @@
   padding: 2.5%; }
 
 .img-logo {
-  width: 4%;
-  height: 4%;
+  width: 5%;
+  height: 5%;
   margin-top: 1px;
-  margin-right: 5%;
+  margin-right: 1px;
   margin-bottom: 1px;
   margin-left: 1px; }
 
@@ -164,16 +240,17 @@
   white-space: nowrap;
   border-right: 4px solid;
   width: 22ch;
-  animation: typing 3s steps(22), blink 0.5s infinite step-end alternate;
+  animation: typing 2s steps(22), blink 0.5s infinite step-end alternate;
   overflow: hidden; }
 
 .bg-p {
   background-image: linear-gradient(to top, #a25f50, #c3ab73);
   background-color: #C27664; }
   .bg-p .img-thumbnail {
-    width: 30%;
-    height: 30%;
-    object-fit: cover; }
+    max-width: 80%;
+    max-height: auto;
+    object-fit: cover;
+    padding: 0px; }
   .bg-p .text-white {
     padding: 30px; }
 
@@ -184,19 +261,26 @@
   object-fit: cover; }
 
 .bg-authors {
-  color: #4c0e0e;
+  color: #100f0f;
   background-color: #84d2c5d2;
-  padding: 1px; }
+  padding-top: 1%;
+  padding-right: 8%;
+  padding-bottom: 1%;
+  padding-left: 8%;
+  border-radius: 5px; }
+  .bg-authors p:last-child {
+    font-family: "Josefin Sans", sans-serif;
+    color: #100f0f; }
 
 /*Cards*/
 .tarjetitas {
   display: flex;
   padding: 60px;
   gap: 30px;
-  background-color: #84d2c5;
-  background-image: linear-gradient(to top, #c3ab73, #6baea3); }
+  background-color: #B05A7A;
+  background-image: linear-gradient(to top, #c3ab73, #B05A7A); }
   .tarjetitas .tarjetita {
-    background-color: #B05A7A;
+    background-color: #84D2C5;
     border-radius: 5px;
     overflow: hidden;
     display: flex;
@@ -206,24 +290,25 @@
     margin: 3%; }
     .tarjetitas .tarjetita:hover {
       box-shadow: 5px 5px 5px 5px rgba(114, 113, 113, 0.669);
-      background-color: #b05a79a7; }
+      background-color: #84D2C5; }
     .tarjetitas .tarjetita .tarjetita_imagen {
-      max-width: 100vh;
-      max-height: 70vh; }
+      max-width: 100%;
+      height: 50%; }
     .tarjetitas .tarjetita .tarjetita_info {
       padding-inline: 20px;
-      padding: 0 20px 20px 20px; }
+      padding: 0 20px 20px 20px;
+      color: #100f0f; }
       .tarjetitas .tarjetita .tarjetita_info .tarjetita_texto {
         font-family: "Josefin Sans", sans-serif;
         font-size: 21px; }
       .tarjetitas .tarjetita .tarjetita_info .tarjetita_boton a {
-        background-color: #84D2C5;
+        background-color: #B05A7A;
         border: none;
-        color: #191919;
+        color: #f8f4f4;
         padding: 10px 24px;
         text-align: center;
         display: inline-block;
-        font-size: 18px;
+        font-size: 20px;
         text-decoration: none; }
 
 /*LITTLE WOMEN*/
@@ -232,53 +317,94 @@
   padding: 20px;
   background-color: #84D2C5; }
   .noticias-title p {
-    background-color: #c27564a5;
+    background-color: #c27564a9;
     display: flex;
-    margin-right: 20px; }
+    margin-right: 20px;
+    font-family: "Josefin Sans", sans-serif; }
 
 .noticias-imagen1 {
   background-image: linear-gradient(to bottom, #84D2C5, #DFD3C3);
   background-color: #DFD3C3; }
   .noticias-imagen1 img {
-    margin-left: 150px;
-    min-height: 100vh;
-    min-width: 100vh;
+    min-height: auto;
+    min-width: 100%;
     justify-content: center; }
 
 .noticias-seccion1 {
   background-color: #dfd3c3; }
   .noticias-seccion1 p {
     text-align: justify;
-    padding: 20vh;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 21px; }
+    font-size: 18px; }
+    .noticias-seccion1 p .capital {
+      font-size: 60px; }
 
 .mujercitas-pinterest {
   background-image: linear-gradient(to top, #B05A7A, #dfd3c3);
-  background-color: #dfd3c3; }
+  background-color: #dfd3c3;
+  padding-top: 15vh; }
   .mujercitas-pinterest h2 {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px; }
-  .mujercitas-pinterest iframe {
-    row-gap: 100px; }
-  .mujercitas-pinterest .mujercitas-iframe {
-    margin: 8vh; }
+  .mujercitas-pinterest-1 {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+.noticias-title p, .noticias-title em {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 5%;
+  margin-right: 2%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  border-radius: 5px; }
+
+.noticias-imagen1 {
+  display: flex; }
+  .noticias-imagen1 img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    padding: 2%; }
+
+.noticias-seccion1 p {
+  font-size: 18px;
+  text-align: justify;
+  margin: 0;
+  padding: 5vh;
+  line-height: 1.5em; }
+  .noticias-seccion1 p em {
+    font-family: "Josefin Sans", sans-serif, cursive; }
+
+.mujercitas-iframe {
+  margin: 6%;
+  justify-content: center;
+  align-content: center; }
 
 /*Shelley*/
 .shelley-pinterest {
   background-image: linear-gradient(to top, #C27664, #dfd3c3);
-  background-color: #dfd3c3; }
+  background-color: #dfd3c3;
+  padding-top: 15vh; }
   .shelley-pinterest h2 {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px; }
-  .shelley-pinterest .shelley-iframe {
-    margin-top: 5vh;
-    margin-right: 12vh;
-    margin-bottom: 5vh;
-    margin-left: 12vh; }
+  .shelley-pinterest-1 {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+.shelley-iframe {
+  margin: 6%;
+  justify-content: center;
+  align-content: center; }
 
 /*FOOTER*/
 .footer {
@@ -308,39 +434,173 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "logo" "virginia woolf" "oscar wilde" "gabrielgarciamarquez" "agathachristie"; }
+  .tit-autores {
+    display: none; }
   .bg-p {
     display: flex;
-    flex: 1;
-    height: 95vh;
     flex-direction: column; }
   .text-white {
     display: flex;
     flex: 1;
-    min-width: 30vh;
-    min-height: 10vh;
-    padding: 5px; }
+    min-width: 100%;
+    height: auto;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 5%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    margin-left: 2%; }
   .img-thumbnail {
     display: flex;
     flex: 1;
     order: 2;
-    min-width: 50vh;
-    max-height: 70vh; }
+    min-width: 100%;
+    height: auto;
+    object-fit: contain; }
   html, body {
     max-width: 100%;
     overflow-x: hidden; }
-  .tarjetitas {
+  .tarjetita {
     display: flex;
-    flex-direction: column; }
+    flex-direction: row;
+    align-self: auto;
+    margin: 0; }
+  .tarjetita_texto {
+    font-size: 16px; }
+  .tajetita_imagen {
+    height: auto;
+    max-width: 100%; }
   .noticias-title {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 40px; }
+    .noticias-title p, .noticias-title em {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 18px;
+      margin-top: 5%;
+      margin-right: 2%;
+      margin-bottom: 5%;
+      margin-left: 2%;
+      border-radius: 5px; }
   .noticias-imagen1 {
+    display: flex; }
+    .noticias-imagen1 img {
+      max-width: 100%;
+      max-height: auto;
+      object-fit: cover;
+      padding: 2%; }
+  .noticias-seccion1 p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 0;
+    padding: 5vh;
+    line-height: 1.5em; }
+  .shelley-1 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .mujercitas-1 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .dickens-1 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .newsletter-container {
+    display: flex;
+    flex-direction: column; }
+  .picture {
+    min-width: 100%;
+    height: 420px; }
+  .newsletter {
+    min-width: 100%;
+    padding: 100px 20%; }
+  .img-logo {
+    display: none; } }
+
+@media screen and (max-width: 758px) {
+  .container-autores {
+    height: 250vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "logo" "virginia woolf" "oscar wilde" "gabrielgarciamarquez" "agathachristie"; }
+  .tit-autores {
+    display: none; }
+  .bg-p {
+    display: flex;
+    flex-direction: column; }
+  .text-white {
+    display: flex;
+    flex: 1;
+    min-width: 100%;
+    height: auto;
+    align-items: center; }
+  .img-thumbnail {
+    display: flex;
+    flex: 1;
+    order: 2;
+    min-width: 100%;
+    height: auto;
+    object-fit: contain; }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden; }
+  .tarjetitas {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px; } }
+    margin: 0; }
+  .tarjetita_info {
+    font-size: 16px; }
+  .tajetita_imagen {
+    height: auto;
+    max-width: 100vh; }
+  .noticias-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px; }
+    .noticias-title p, .noticias-title em {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 18px;
+      margin-top: 5%;
+      margin-right: 2%;
+      margin-bottom: 5%;
+      margin-left: 2%;
+      border-radius: 5px; }
+  .noticias-imagen1 {
+    display: flex; }
+    .noticias-imagen1 img {
+      max-width: 100%;
+      max-height: auto;
+      object-fit: cover;
+      padding: 2%; }
+  .noticias-seccion1 p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 0;
+    padding: 5vh;
+    line-height: 1.5em; }
+  .shelley-pinterest {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .mujercitas-pinterest {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .dickens-pinterest {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (max-width: 480px) {
   .container-autores {
@@ -352,7 +612,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    height: 100vh; }
+    height: auto; }
   .frase {
     display: flex;
     flex-direction: row;
@@ -360,32 +620,67 @@
     max-height: 30vh;
     flex: 1; }
   .img-thumbnail {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    min-width: 30vh;
-    min-height: 60vh; }
+    max-width: 100%;
+    max-height: auto;
+    object-fit: contain; }
+  .text-white {
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 5%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    margin-left: 2%; }
   html, body {
     max-width: 100%;
     overflow-x: hidden; }
-  .tarjetitas {
+  .tarjetita {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    max-width: 100%; }
+  .tarjetita_info {
+    font-size: 16px; }
+  .tajetita_imagen {
+    height: auto; }
   .noticias-title {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    .noticias-title p, .noticias-title em {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 16px;
+      margin-top: 5%;
+      margin-right: 2%;
+      margin-bottom: 5%;
+      margin-left: 2%;
+      border-radius: 5px; }
   .noticias-imagen1 {
+    display: flex; }
+    .noticias-imagen1 img {
+      max-width: 100%;
+      max-height: auto;
+      object-fit: contain;
+      padding: 2%; }
+  .noticias-seccion1 p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 0;
+    padding: 5vh;
+    line-height: 1.5em; }
+  .shelley-pinterest {
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px; } }
-
-/*ANIMACION EN EL TITULO*/
-@keyframes typing {
-  from {
-    width: 0; } }
-
-@keyframes blink {
-  50% {
-    border-color: transparent; } }
+    align-items: center; }
+  .mujercitas-pinterest {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .dickens-pinterest {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .newsletter {
+    padding: 100px 30px; }
+  .picture {
+    min-height: 50%; } }

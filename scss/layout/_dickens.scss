@@ -3,6 +3,7 @@
 .dickens-pinterest {
     background-image: linear-gradient(to top, #C27664, #dfd3c3);
     background-color: #dfd3c3;
+    padding-top: 15vh;
 
     & h2 {
         text-align: center;
@@ -10,17 +11,20 @@
         padding-bottom: 20px;
     }
 
-    & iframe {
-        row-gap: 2.5vh;
+    &-1 {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
 
-    .dickens-iframe {
-        margin-top: 5vh;
-        margin-right: 12vh;
-        margin-bottom: 5vh;
-        margin-left: 12vh;
-    }
 }
 
 
+
+.dickens-iframe{ 
+    margin: 6%;
+    justify-content: center;
+    align-content: center;
+}
